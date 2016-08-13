@@ -1,2 +1,2 @@
-# MirageLabs.github.io
-Company Landing Page
+# MirageLabs.co
+Mirage Labs Landing Page

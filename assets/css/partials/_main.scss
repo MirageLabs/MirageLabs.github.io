@@ -1,0 +1,29 @@
+/* Body */
+
+body {
+  @include preserve-3d;
+}
+
+
+/* Main */
+
+.contact {
+  text-align: center;
+}
+
+.bg-text {
+  color: $parallax-bg-font-color;
+}
+
+.vertical-center {
+  position: relative;
+  @include vertical-center;
+}
+
+.contact-info {
+  font-size: 18px;
+
+  &:not(:last-child) {
+  margin: 0;
+  }
+}

@@ -1,0 +1,37 @@
+
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600';
+
+/* Variables */
+
+$base-font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$light-weight: 300;
+$regular-weight: 400;
+$semi-bold-weight: 600;
+
+$parallax-bg-font-color: #fff;
+
+
+/* Mixins */
+
+@mixin preserve-3d {
+  -webkit-transform-style: preserve-3d;
+     -moz-transform-style: preserve-3d;
+      -ms-transform-style: preserve-3d;
+       -o-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+@mixin vertical-center {
+  top: 50%;
+  transform: perspective(1px) translateY(-50%);
+}
+
+
+/* Imports */
+
+@import 'partials/_main.scss';
+@import 'partials/_typography.scss';
+@import 'partials/_navigation.scss';
+@import 'partials/_carousel.scss';
+@import 'partials/_parallax.scss';
+@import 'partials/_footer.scss';

@@ -4,7 +4,6 @@ body {
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
-  scroll-behavior: smooth;
 }
 
 
@@ -14,6 +13,29 @@ body {
   margin-bottom: 0;
 }
 
+/* Carousel */
+
+.item {
+  height: calc(100vh - 50px);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carousel-caption {
+  top: 50%;
+  transform: perspective(1px) translateY(-50%);
+  bottom: initial;
+  padding: 0;
+}
+
+h3 {
+  font-size: 4em;
+}
+
+.carousel-caption p {
+  font-size: 2em;
+}
 
 /* Main */
 
@@ -59,7 +81,7 @@ body {
 }
 
 .bg-holder#pic1 {
-  background-image: url('../img/rsz_img4.jpg');
+  background-image: url('../img/nyc.jpg');
   height: 500px;
 }
 

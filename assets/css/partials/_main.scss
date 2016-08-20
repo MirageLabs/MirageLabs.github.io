@@ -2,28 +2,50 @@
 
 body {
   @include preserve-3d;
+  font-size: $base-font-size;
 }
 
 
 /* Main */
 
-.contact {
-  text-align: center;
-}
+section {
+  height: $main-section-height;
 
-.bg-text {
-  color: $parallax-bg-font-color;
-}
+  &.about {
+    color: #fff;
+  }
 
-.vertical-center {
-  position: relative;
-  @include vertical-center;
-}
+  &.security-pentesting {
+    height: 500px;
+  }
 
-.contact-info {
-  font-size: 18px;
+  &.code-review {
+    color: #fff;
+  }
 
-  &:not(:last-child) {
-  margin: 0;
+  &.managed-security {
+    height: 500px;
+  }
+
+  &.forensics-malware {
+    color: #fff;
+  }
+
+  &.contact {
+    text-align: center;
+    height: 500px;
+
+    .contact-info {
+      font-size: 18px;
+    
+      &:not(:last-child) {
+        margin: 0;
+      }
+    }
+  }
+
+  .container {
+    position: relative;
+    @include vertical-center;
   }
 }

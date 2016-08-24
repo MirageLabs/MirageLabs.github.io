@@ -1,6 +1,7 @@
 
 @import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600';
 
+
 /* Variables */
 
 $base-font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -10,7 +11,16 @@ $light-weight: 300;
 $regular-weight: 400;
 $semi-bold-weight: 600;
 
-$main-section-height: 500px;
+$navbar-font-size: 14px;
+
+$main-section-height: 100vh;
+
+$breakpoints: (
+  'phone'   : ( max-width:  766px ),
+  'tablet'  : ( min-width:  767px ),
+  'laptop'  : ( min-width: 1200px )
+);
+
 
 /* Mixins */
 
@@ -25,6 +35,20 @@ $main-section-height: 500px;
 @mixin vertical-center {
   top: 50%;
   transform: perspective(1px) translateY(-50%);
+}
+
+
+/* Media Override */
+
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media #{inspect(map-get($breakpoints, $breakpoint))} {
+      @content;
+    }
+  }
+  @else {
+    @warn "No value retrieved from `#{breakpoints}`"
+  }
 }
 
 

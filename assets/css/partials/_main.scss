@@ -9,22 +9,23 @@ body {
 /* Main */
 
 section {
-  height: $main-section-height;
+  height: 100vh;
 
   &.about {
     color: #fff;
   }
 
-  &.security-pentesting {
-    height: 500px;
+  &.pentesting {
+    .row.description {
+      padding-bottom: 15px;
+    }
   }
 
-  &.code-review {
+  &.app-security {
     color: #fff;
   }
 
   &.managed-security {
-    height: 500px;
   }
 
   &.forensics-malware {
@@ -33,7 +34,6 @@ section {
 
   &.contact {
     text-align: center;
-    height: 500px;
 
     .contact-info {
       font-size: 18px;
@@ -44,8 +44,50 @@ section {
     }
   }
 
+  .row.icons {
+    text-align: center;
+  }
+
   .container {
     position: relative;
     @include vertical-center;
+  }
+
+  @include respond-to(phone) {
+    &.pentesting {
+      height: 150vh;
+    }
+
+    img.icon {
+      padding-top: 5px;
+      max-width: 75%;
+      max-height: 75%;
+    }
+  }
+  
+  @include respond-to(tablet) {
+    img.icon {
+      padding-top: 30px;
+      max-width: 75%;
+      max-height: 75%;
+    }
+
+    p.col-title {
+      font-size: 22px;
+      font-weight: $light-weight;
+    }
+  }
+
+  @include respond-to(laptop) {
+    img.icon {
+      padding-top: 15px;
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    p.col-title {
+      font-size: 22px;
+      font-weight: $light-weight;
+    }
   }
 }

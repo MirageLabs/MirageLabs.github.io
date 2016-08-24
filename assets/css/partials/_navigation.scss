@@ -2,5 +2,9 @@
 
 .navbar {
   margin-bottom: 0;
-  font-weight: $semi-bold-weight;
+
+  li {
+    font-size: $navbar-font-size;
+    font-weight: $semi-bold-weight; 
+  }
 }

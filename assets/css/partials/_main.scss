@@ -55,7 +55,7 @@ section {
 
   @include respond-to(xs-phone) {
     &.pentesting {
-      height: 175vh;
+      height: 160vh;
     }
 
     img.icon {
@@ -67,7 +67,7 @@ section {
 
   @include respond-to(phone) {
     &.pentesting {
-      height: 150vh;
+      height: 140vh;
     }
 
     img.icon {

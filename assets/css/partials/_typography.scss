@@ -9,6 +9,7 @@ h1 {
 }
 
 h2 {
+  margin-top: 10px;
   font-size: 3em;
   font-weight: $light-weight;
 }
@@ -28,4 +29,18 @@ h5 {
 
 h6 {
   font-size: 1.25em;
+}
+
+@include respond-to(xs-phone) {
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 2.25em;
+  }
+
+  h3 {
+    font-size: 1.75em;
+  }
 }

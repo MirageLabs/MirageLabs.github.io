@@ -1,7 +1,14 @@
 $(document).ready(function() {
-  $('.bg-holder').parallaxScroll({
-    friction: 0.2
-  });
+  //Check if mobile
+  if (/Mobi/.test(navigator.userAgent)) {
+    $('.bg-holder').parallaxScroll({
+      friction: 0
+    });
+  } else {
+    $('.bg-holder').parallaxScroll({
+      friction: 0.2
+    });
+  }
 
   $('a[href^="#"]').on('click', function(event) {
     var target = $(this.getAttribute('href'));

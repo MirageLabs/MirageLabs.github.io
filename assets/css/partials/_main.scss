@@ -44,6 +44,11 @@ section {
     }
   }
 
+  p.col-title {
+    font-size: 22px;
+    font-weight: $light-weight;
+  }
+
   .row.icons {
     text-align: center;
   }
@@ -55,7 +60,7 @@ section {
 
   @include respond-to(xs-phone) {
     &.pentesting {
-      height: 160vh;
+      height: 170vh;
     }
 
     img.icon {
@@ -67,7 +72,7 @@ section {
 
   @include respond-to(phone) {
     &.pentesting {
-      height: 140vh;
+      height: 150vh;
     }
 
     img.icon {
@@ -83,11 +88,6 @@ section {
       max-width: 75%;
       max-height: 75%;
     }
-
-    p.col-title {
-      font-size: 22px;
-      font-weight: $light-weight;
-    }
   }
 
   @include respond-to(laptop) {
@@ -95,11 +95,6 @@ section {
       padding-top: 15px;
       max-width: 100%;
       max-height: 100%;
-    }
-
-    p.col-title {
-      font-size: 22px;
-      font-weight: $light-weight;
     }
   }
 }

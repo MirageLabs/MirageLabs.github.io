@@ -25,6 +25,13 @@ $breakpoints: (
 
 /* Mixins */
 
+@mixin background-cover {
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}
+
 @mixin preserve-3d {
   -webkit-transform-style: preserve-3d;
      -moz-transform-style: preserve-3d;

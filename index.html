@@ -11,205 +11,113 @@
 
   <title>Mirage Labs</title>
 
-  <!-- jQuery -->
-  <script src="assets/vendor/jquery/js/jquery.min.js"></script>
   <!-- Normalize -->
   <link href="assets/vendor/normalize/css/normalize.css" rel="stylesheet">
-  <!-- Bootstrap -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
-  <!-- Parallax Scroll -->
-  <script src="assets/vendor/parallax-scroll/js/jquery.parallax-scroll.min.js"></script>
-
+  <!-- Materialize -->
+  <link href="assets/vendor/materialize/css/materialize.min.css" rel="stylesheet">
   <!-- Main styles -->
   <link href="assets/css/styles.min.css" rel="stylesheet">
-  <script src="assets/js/main.js"></script>
+  
 </head>
 
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-default">
-    <div class="container">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header page-scroll">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#page-top">Mirage Labs</a>
-      </div>
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-          <li class="page-scroll">
-            <a href="#about">About</a>
-          </li>
-          <li class="page-scroll">
-            <a href="#pentesting">Penetration Testing</a>
-          </li>
-          <li class="page-scroll">
-            <a href="#app-security">Application Security &amp; Code Review</a>
-          </li>
-          <li class="page-scroll">
-            <a href="#managed-security">Managed Security</a>
-          </li>
-          <li class="page-scroll">
-            <a href="#forensics-malware">Forensic &amp; Malware Analysis</a>
-          </li>
-          <li class="page-scroll">
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-      <!-- /.navbar-collapse -->
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Mirage Labs</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Penetration Testing</a></li>
+        <li><a href="#">Application Security</a></li>
+        <li><a href="#">Managed Security</a></li>
+        <li><a href="#">Forensic &amp; Malware Analysis</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Penetration Testing</a></li>
+        <li><a href="#">Application Security</a></li>
+        <li><a href="#">Managed Security</a></li>
+        <li><a href="#">Forensic &amp; Malware Analysis</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
     </div>
-    <!-- /.container-fluid -->
   </nav>
 
   <!-- Carousel -->
-  <header>
-    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-      </ol>
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner" role="listbox">
-        <div class="item active" style="background-image: url('assets/img/sql.jpg');">
-          <div class="carousel-caption">
-            <h1>Mirage Labs</h1>
-            <h3>Lorem Ipsum</h3>
-          </div>
-        </div>
-        <div class="item" style="background-image: url('assets/img/empire.jpg');">
-          <div class="carousel-caption">
-            <h1>Mirage Labs is awesome</h1>
-            <h3>Lorem Ipsum</h3>
-          </div>
-        </div>
-        <div class="item" style="background-image: url('assets/img/lights.jpg');">
-          <div class="carousel-caption">
-            <h1>Mirage Labs is really awesome</h1>
-            <h3>Lorem Ipsum</h3>
-          </div>
-        </div>
-      </div>
-      <!-- Controls -->
-      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
+  <div class="carousel carousel-slider center" data-indicators="true">
+    <div class="carousel-fixed-item center">
+      <a class="btn waves-effect white grey-text darken-text-2">Check out our sick solutions</a>
     </div>
-  </header>
+    <div class="carousel-item white-text" href="#one!" style="background-image: url('assets/img/sql.jpg');">
+      <h2>First Panel</h2>
+      <p class="white-text">This is your first panel</p>
+    </div>
+    <div class="carousel-item white-text" href="#two!" style="background-image: url('assets/img/empire.jpg');">
+      <h2>Second Panel</h2>
+      <p class="white-text">This is your second panel</p>
+    </div>
+    <div class="carousel-item white-text" href="#three!" style="background-image: url('assets/img/lights.jpg');">
+      <h2>Third Panel</h2>
+      <p class="white-text">This is your third panel</p>
+    </div>
+  </div>
 
   <!-- Main -->
   <main>
+
     <!-- About -->
-    <section class="about" id="about">
-      <div id="bg1" class="bg-holder" data-width="1635" data-height="1080">
-        <div class="container">
-          <div class="row bg-text">
-            <div class="col-md-12">
+    <section class="parallax-container valign-wrapper" id="about">
+      <div class="container">
+          <div class="row center">
+            <div class="col s12">
               <h2>Mirage Labs</h2>
               <p>Mirage Labs is a New York City based Inform Security and Research Firm. We are an elite multinational group of experts who have worked at the highest levels of Information Security, Mathematics, Software Development, Academic Research and Military or Intelligence agencies.</p>
               <p>Mirage Labs is an organization ensures that its members strive for nothing short of perfection and our solutions at the bleeding edge of technological advancement.</p>
             </div>
           </div>
         </div>
-      </div>
+      <div class="parallax"><img src="assets/img/nyc-blur.jpg"></div>
     </section>
-    <!-- Security & Pentesting -->
-    <section class="pentesting" id="pentesting">
+
+    <!-- Penetration Testing -->
+    <section id="pentesting">
       <div class="container">
-        <div class="row description">
-          <div class="col-md-12">
+        <div class="row">
+          <div class="col s12">
             <h2>Penetration Testing</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus molestie, ante porta ullamcorper tincidunt, ipsum sem bibendum lorem, ut hendrerit justo nisi in eros. Vestibulum rutrum ligula at risus iaculis, sit amet sodales ipsum tincidunt. Morbi quis velit et velit tincidunt pulvinar. Praesent id imperdiet est. Nulla ut pulvinar ligula, sed gravida augue. Proin suscipit tempus neque, nec scelerisque lectus interdum sed. Nunc ac finibus metus, ut mattis odio.</p>
           </div>
-        </div>
-        <div class="row icons">
-          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3">
+          <div class="col s12 m3">
             <img class="icon" src="assets/icon/web-pentest.svg" alt="">
             <p class="col-title">Web Application Penetration Testing</p>
           </div>
-          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3">
+          <div class="col s12 m3">
             <img class="icon" src="assets/icon/mobile-pentest.svg" alt="">
             <p class="col-title">Mobile Application Penetration Testing</p>
           </div>
-          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3">
+          <div class="col s12 m3">
             <img class="icon" src="assets/icon/network-pentest.svg" alt="">
             <p class="col-title">Network Penetration Testing</p>
           </div>
-          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3">
+          <div class="col s12 m3">
             <img class="icon" src="assets/icon/social-engineer.svg" alt="">
             <p class="col-title">Social Engineering Assessment</p>
           </div>
         </div>
       </div>
     </section>
-    <!-- Code Review -->
-    <section class="app-security" id="app-security">
-      <div id="bg2" class="bg-holder" data-width="1620" data-height="1080">
-        <div class="container">
-          <div class="row bg-text">
-            <div class="col-md-12">
-              <h2>Application Security &amp; Code Review</h2>
-              <p>Morbi luctus neque quam, at euismod enim porttitor eget. Nam ut augue purus. Vivamus elit erat, egestas eget varius sed, ullamcorper ullamcorper purus. Suspendisse eleifend turpis vitae facilisis ultricies. Aliquam id tempus purus, fermentum dapibus magna. Praesent dui risus, lacinia ut velit in, lobortis dapibus sapien. Nam congue sem at gravida porttitor.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Managed Security -->
-    <section class="managed-security" id="managed-security">
-      <div class="container">
-        <h2>Managed Security</h2>
-        <p>Nunc ullamcorper tristique dolor a vestibulum. Vivamus lobortis erat nec nulla ultricies feugiat. Sed porta, lorem id malesuada hendrerit, nunc purus eleifend ex, eget vestibulum magna sapien vitae tortor. In urna elit, auctor ac tristique id, porttitor ac magna. Maecenas mollis consectetur dui at finibus. Duis id ipsum nisi.</p>
-      </div>
-    </section>
-    <!-- Forensics & Malware -->
-    <section class="forensics-malware" id="forensics-malware">
-      <div id="bg3" class="bg-holder" data-width="1920" data-height="1080">
-        <div class="container">
-          <div class="row bg-text">
-            <div class="col-md-12">
-              <h2>Forensic &amp; Malware Analysis</h2>
-              <p>Quisque eleifend dolor nec eros maximus, non imperdiet lacus pretium. Phasellus vel felis ut urna ultricies auctor. Praesent vitae sodales quam. Vestibulum vel vehicula magna. Suspendisse consectetur maximus augue a auctor. Phasellus a tellus a sapien facilisis tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Contact -->
-    <section class="contact" id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h2>Contact</h2>
-            <p class="contact-info">New York Office</p>
-            <p class="contact-info">+1-631-297-4132</p>
-            <a class="contact-info" href="mailto:contact@miragelabs.co">contact@miragelabs.co</a>
-          </div>
-        </div>
-      </div>
-    </section>
+
   </main>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container-fluid copyright">
-      <h6>&copy; Mirage Labs 2016 <a href="https://github.com/MirageLabs/MirageLabs.github.io/blob/master/LICENSE">GPLv3</a></h6>
-    </div>
-  </footer>
+  <!-- jQuery -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <!-- Materialize -->
+  <script src="assets/vendor/materialize/js/materialize.min.js"></script>
+  <!-- Main scripts -->
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>

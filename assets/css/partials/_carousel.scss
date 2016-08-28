@@ -1,18 +1,44 @@
 /* Carousel */
 
-.item {
-  height: calc(100vh - 50px);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+.carousel {
 
-.carousel-caption {
-  @include vertical-center;
-  bottom: initial;
-  padding: 0;
+  .carousel-item {
+    background-size: cover;
 
-  p {
-    font-size: 2em;
+    h2 {
+      margin-top: 0;
+    }
+  }
+
+  @include respond-to(xs-phone) {
+    height: calc(100vh - 56px) !important;
+
+    .carousel-item h2 {
+      padding-top: calc(50vh);
+    }
+  }  
+
+  @include respond-to(phone) {
+    height: calc(100vh - 56px) !important;
+
+    .carousel-item h2 {
+      padding-top: calc(50vh - 56px);
+    }
+  }
+
+  @include respond-to(tablet) {
+    height: calc(100vh - 64px) !important;
+
+    .carousel-item h2 {
+      padding-top: calc(50vh - 64px);
+    }
+  }
+
+  @include respond-to(laptop) {
+    height: calc(100vh - 64px) !important;
+
+    .carousel-item h2 {
+      padding-top: calc(50vh - 64px);
+    }
   }
 }

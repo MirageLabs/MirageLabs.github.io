@@ -2,12 +2,17 @@
 /* Main */
 
 section {
+
+  &#about {
+    color: #fff;
+  }
+
   &.parallax-container {
     height: 800px;
   }
 
-  &#about {
-    color: #fff;
+  &.icon-block {
+    padding: 0 15px;
   }
 
   /* &#pentesting {

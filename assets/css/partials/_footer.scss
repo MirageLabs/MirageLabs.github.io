@@ -1,7 +1,14 @@
 /* Footer */
 
-.copyright {
-  background-color: #f8f8f8;
-  border: 1px solid #e7e7e7;
-  text-align: center;
+footer.page-footer {
+  background-color: #C19A6B;
+
+  p.location {
+    margin-bottom: 0;
+  }
+
+  p.phone-number {
+    font-size: 15px;
+    margin: 0;
+  }
 }

@@ -3,7 +3,13 @@
 nav {
   background-color: #C19A6B;
 
-  a.brand-logo {
-    padding: 0 15px;
+  a {
+    &.brand-logo {
+      padding: 0 15px;
+    }
+
+    &.button-collapse {
+      padding: 0 15px;
+    } 
   }
 }

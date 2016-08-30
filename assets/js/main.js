@@ -2,7 +2,7 @@ $(document).ready(function() {
   $('.carousel.carousel-slider').carousel({full_width: true});
 
   $('.button-collapse').sideNav({
-      menuWidth: 200,
+      menuWidth: 215,
       edge: 'left',
       closeOnClick: true
     }

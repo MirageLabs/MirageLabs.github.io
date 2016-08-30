@@ -1,6 +1,13 @@
 $(document).ready(function() {
-  $(".button-collapse").sideNav();
   $('.carousel.carousel-slider').carousel({full_width: true});
+
+  $('.button-collapse').sideNav({
+      menuWidth: 200,
+      edge: 'left',
+      closeOnClick: true
+    }
+  );
+
   $('.parallax').parallax();
 
   $("a").on('click', function(event) {

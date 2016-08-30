@@ -3,16 +3,28 @@
 
 section {
 
+  &.parallax-container {
+    /* height: 500px; */
+  }
+
+  .icon-block {
+    padding: 0 15px;
+    
+    .icon {
+      width: 100%;
+    }
+  }
+
+  .text-content {
+    padding-bottom: 1rem !important;
+  }
+
   &#about {
     color: #fff;
   }
 
-  &.parallax-container {
-    height: 800px;
-  }
+  &#pentesting {
 
-  &.icon-block {
-    padding: 0 15px;
   }
 
   /* &#pentesting {
